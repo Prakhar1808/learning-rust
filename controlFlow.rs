@@ -1,6 +1,6 @@
 fn main() {
     // If statements (no parentheses needed)
-    let number = 6;
+    let number = 6; //immutable
     
     if number % 2 == 0 {
         println!("even");
