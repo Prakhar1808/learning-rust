@@ -15,4 +15,12 @@ fn main() {
     let y: u8 = 0b1100_1100;
 
 
+     println!("x & y = {:08b}", x & y); // Bitwise AND
+    println!("x | y = {:08b}", x | y); // Bitwise OR
+    println!("x ^ y = {:08b}", x ^ y); // Bitwise XOR
+    println!("!x = {:08b}", !x);      // Bitwise NOT
+    println!("x << 2 = {:08b}", x << 2); // Left shift
+    println!("y >> 2 = {:08b}", y >> 2); // Right shift
+
+
     //TBC
