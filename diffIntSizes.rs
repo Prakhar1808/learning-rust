@@ -23,4 +23,8 @@ fn main() {
     println!("y >> 2 = {:08b}", y >> 2); // Right shift
 
 
-    //TBC
+    //Compound Assignemnt (like C)
+    let mut z = 5;
+    z += 3;     //z = z + 2
+    z *= 2;     //z = z * 2
+    println!("z= {}", z); }
