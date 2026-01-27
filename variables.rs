@@ -33,3 +33,27 @@ fn main() {
 
     let w: i32; //this will give a warning, because uninitialized but un used
 }
+
+fn destructuring(){
+    let (mut x, y) = (1, 2);
+    // we can also declare multiple variables like this
+    // let (x, y);
+    // is same as:
+    // let x;
+    // let y;
+    x += 2;
+
+    assert_eq!(x, 3);
+    println!("Success!");
+}
+
+fn destructuringAssignments(){
+    let (x, y);
+
+    (x,...) = (3, 4);
+    [..., y] = [1, 2];
+
+    assert_eq!([x, y], [3, 2]);
+
+    println!("Success!");
+}
