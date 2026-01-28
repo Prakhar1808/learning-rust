@@ -33,3 +33,17 @@ fn addingDifferentNumberSystems(){
 
     println!("Success!");
 }
+
+fn floatingPoint() {
+    let x: f64 = 1_000.000_1; //f64 is default
+    let y: f32 = 0.12;
+    let z: f64 = 0.01_f64;
+
+    assert_eq!(type_of(&x), "f64".to_string());
+    println!("Success!");
+}
+
+fn floatingPrecision() {
+    //assert_eq!(0.1+0.2==0.3); //gives error because f64 is default and 0.1_f64 + 0.2_f64 = 0.30000000001 approximately
+    assert_eq!(0.1_f32+0.2_f32==0.3_f32);
+}
