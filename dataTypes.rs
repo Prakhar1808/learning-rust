@@ -44,6 +44,9 @@ fn floatingPoint() {
 }
 
 fn floatingPrecision() {
-    //assert_eq!(0.1+0.2==0.3); //gives error because f64 is default and 0.1_f64 + 0.2_f64 = 0.30000000001 approximately
-    assert_eq!(0.1_f32+0.2_f32==0.3_f32);
+    // assert_eq!(0.1+0.2==0.3); //gives error because f64 is default and 0.1_f64 + 0.2_f64 = 0.30000000001 approximately
+    // assert_eq!(0.1_f32+0.2_f32==0.3_f32);
+    // or
+    assert_eq!(0.1 as f32 +0.2 as f32==0.3 as f32);
+    println!("Success!");
 }
